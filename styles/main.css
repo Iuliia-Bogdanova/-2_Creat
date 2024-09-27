@@ -1,41 +1,6 @@
-@import url(./vars.css);
 @import url(./normalize.css);
-
-@font-face {
-    font-family: 'Gotham Pro';
-    src: url('../assets/fonts/GothamPro.woff2') format('woff2'),
-        url('../assets/fonts/GothamPro.woff') format('woff'),
-        url('../assets/fonts/GothamPro.ttf') format('truetype');
-    font-weight: var(--font-weight-regular);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Pro';
-    src: url('../assets/fonts/GothamPro-Medium.woff2') format('woff2'),
-        url('../assets/fonts/GothamPro-Medium.woff') format('woff'),
-        url('../assets/fonts/GothamPro-Medium.ttf') format('truetype');
-    font-weight: var(--font-weight-medium);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Gotham Pro';
-    src: url('../assets/fonts/GothamPro-Bold.woff2') format('woff2'),
-        url('../assets/fonts/GothamPro-Bold.woff') format('woff'),
-        url('../assets/fonts/GothamPro-Bold.ttf') format('truetype');
-    font-weight: var(--font-weight-bold);
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Abel';
-    src: url('../assets/fonts/Abel-Regular.woff2') format('woff2'),
-        url('../assets/fonts/Abel-Regular.woff') format('woff'),
-        url('../assets/fonts/Abel-Regular.ttf') format('truetype');
-    font-weight: var(--font-weight-regular);
-    font-style: normal;
-}
+@import url(./vars.css);
+@import url(./fonts.css);
 
 *, 
 *::after,
@@ -45,14 +10,130 @@
     padding: 0;
 }
 
-html,
-body {
-    overflow-x: hidden;
+/* * {outline: 1px solid green} */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     background-color: var(--background);
     font-family: var(--font-main);
     font-weight: var(--font-weight-regular);
     color: var(--text-color);
+    overflow-x: hidden;
+
+    /* outline: 1px solid green; */
 }
+
+.header {
+    /* height: 80px; */
+    background: linear-gradient(132deg, #9e0b37 0%, #ffc531 71.98%, #9e0b37 100%);
+}
+
+.container  {
+    max-width: 1420px;
+    margin: 0 auto;
+}
+
+.menu {
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center;
+    text-align: center; */
+}
+
+.menu__list,
+.menu__auth {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.menu__list {
+    gap: 84px;
+}
+
+.menu__auth {
+    gap: 42px;
+}
+
+.menu__link {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-medium);
+    font-size: 16px;
+    
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.menu__link:hover {
+    transform: scale(0.98);
+    opacity: 0.8;
+}
+
+.menu__link--first {
+    position: relative;
+}
+
+.menu__link--first::after {
+    position: absolute;
+    content: "";
+    background-image: url(../assets/icons/down_arrow.svg);
+    width: 5px;
+    height: 12px;
+    left: 123px;
+    top: 4px;
+}
+
+.menu__link--second {
+    font-family: var(--second-family);
+    font-weight: var(--font-weight-regular);
+    font-size: 16px;
+}
+
+.menu__link--btn {
+    width: 160px;
+    height: 49px;
+    padding: 16px 24px;
+    border-radius: 40px;
+    box-shadow: inset 4px 4px 6px 0 rgba(255, 255, 255, 0.5), 4px 4px 20px 0 rgba(223, 80, 23, 0.8);
+    background: rgba(158, 11, 55, 0.7);
+    font-size: 17px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    max-width: 1920px;
+    width: 100%;
+    min-height: 100%;
+    /* margin: 40px auto;
+    padding: 0 15px; */
+
+    border: 1px solid red;
+}
+

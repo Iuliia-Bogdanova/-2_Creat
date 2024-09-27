@@ -1,6 +1,6 @@
 :root {
-    --font-main: 'Gotham Pro', sans-serif;
-    --font-secondary: 'Abel', sans-serif;
+    --font-family: 'Gotham Pro', sans-serif;
+    --second-family: 'Abel', sans-serif;
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
