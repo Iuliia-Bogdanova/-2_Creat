@@ -1,0 +1,12 @@
+:root {
+    --font-main: 'Gotham Pro', sans-serif;
+    --font-secondary: 'Abel', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --background: #171422;
+    --text-color: #fff;
+    /* --black-color: #1F1F1F;
+    --red-color: #F95707;
+    --green-color: #105720; */
+}

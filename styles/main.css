@@ -1,0 +1,58 @@
+@import url(./vars.css);
+@import url(./normalize.css);
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../assets/fonts/GothamPro.woff2') format('woff2'),
+        url('../assets/fonts/GothamPro.woff') format('woff'),
+        url('../assets/fonts/GothamPro.ttf') format('truetype');
+    font-weight: var(--font-weight-regular);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../assets/fonts/GothamPro-Medium.woff2') format('woff2'),
+        url('../assets/fonts/GothamPro-Medium.woff') format('woff'),
+        url('../assets/fonts/GothamPro-Medium.ttf') format('truetype');
+    font-weight: var(--font-weight-medium);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url('../assets/fonts/GothamPro-Bold.woff2') format('woff2'),
+        url('../assets/fonts/GothamPro-Bold.woff') format('woff'),
+        url('../assets/fonts/GothamPro-Bold.ttf') format('truetype');
+    font-weight: var(--font-weight-bold);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Abel';
+    src: url('../assets/fonts/Abel-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Abel-Regular.woff') format('woff'),
+        url('../assets/fonts/Abel-Regular.ttf') format('truetype');
+    font-weight: var(--font-weight-regular);
+    font-style: normal;
+}
+
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--background);
+    font-family: var(--font-main);
+    font-weight: var(--font-weight-regular);
+    color: var(--text-color);
+}
