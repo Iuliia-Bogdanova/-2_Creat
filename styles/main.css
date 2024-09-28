@@ -38,10 +38,34 @@ body {
     background-color: var(--background);
     font-family: var(--font-family);
     font-weight: var(--font-weight-regular);
+    font-size: 22px;
+    line-height: 140%;
     color: var(--text-color);
     overflow-x: hidden;
 
     /* outline: 1px solid green; */
+}
+
+body::-webkit-scrollbar {
+    background: inherit;
+    width: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 1px solid #9e0b37;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: #8a2645;
+}
+
+body::-webkit-scrollbar-corner {
+    display: none;
+}
+
+.header {
+    margin-bottom: 100px;
 }
 
 .header__top {
@@ -128,18 +152,21 @@ body {
     width: 100%;
     /* max-width: 1920px; */
     height: 650px;
-    /* margin-top: -80px; */
     margin: -80px auto 0;
     z-index: -10;
+    transform-origin: top left;
 }
 
 .header__title::before {
     position: absolute;
     content: "";
     width: 1310px;
-    height: 650px;   
-    background: 
-        
+    /* width: 68.125%; */
+    height: 648px;  
+    background-image: url(../assets/img/tv-wrap_gradient.png);
+    background-size: cover;
+    background-position: center;
+    /* background: 
         linear-gradient(150deg, 
                         #df5017 0%, 
                         rgba(223, 80, 23, 0.4) 20%, 
@@ -155,16 +182,18 @@ body {
                         rgba(40, 37, 51, 0.5) 50%, 
                         rgba(40, 37, 51, 0.3) 60%,  
                         rgba(40, 37, 51, 0) 70%,  
-                        rgba(40, 37, 51, 0) 100%);
+                        rgba(40, 37, 51, 0) 100%); */
     top: 0;
     left: 0;
     z-index: 1; 
+    transform: scale(1);
 }
 
 .header__title::after {
     position: absolute;
     content: "";
     background: linear-gradient(to right, #171422 0%, rgba(23, 20, 34, 0) 50%), url(../assets/img/tv-wrap.jpg);
+    /* background-image: url(../assets/img/tv-wrap.jpg); */
     background-size: cover;
     background-position: center;
     width: 1070px;
@@ -190,3 +219,34 @@ h1 {
     z-index: 10;
 }
 
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+    /* outline: 1px solid green;  */
+}
+
+.basic {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 82%;
+}
+
+.basic__intro {
+    /* width: 1180px;
+    height: 152px; */
+    border-radius: 30px;
+    padding: 40px 0 50px 40px;
+    margin-bottom: 60px;
+    background: linear-gradient(135deg, #ffa462 0%, #b45350 21.79%, #8a2645 48.93%, #291725 84.55%);
+    /* border: none; */
+}
+
+.pages {
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+    gap: 10px;
+}
