@@ -125,7 +125,7 @@ body::-webkit-scrollbar-corner {
     width: 5px;
     height: 12px;
     left: 123px;
-    top: 4px;
+    top: 10px;
 }
 
 .menu__link--second {
@@ -146,12 +146,12 @@ body::-webkit-scrollbar-corner {
 
 .header__title {
     position: relative;
-    /* width: 100%; */
+    width: 100%;
     /* max-width: 1920px; */
     height: 650px;
     margin: -80px auto 0;
     z-index: -10;
-    /* transform-origin: top left; */
+    transform-origin: top left;
 }
 
 .header__title::before {
@@ -160,10 +160,10 @@ body::-webkit-scrollbar-corner {
     /* width: 1310px; */
     width: 68%;
     height: 648px;  
-    background-image: url(../assets/img/tv-wrap_gradient.png);
+    /* background-image: url(../assets/img/tv-wrap_gradient.png);
     background-size: cover;
-    background-position: center;
-    /* background: 
+    background-position: center; */
+    background: 
         linear-gradient(150deg, 
                         #df5017 0%, 
                         rgba(223, 80, 23, 0.4) 20%, 
@@ -179,11 +179,11 @@ body::-webkit-scrollbar-corner {
                         rgba(40, 37, 51, 0.5) 50%, 
                         rgba(40, 37, 51, 0.3) 60%,  
                         rgba(40, 37, 51, 0) 70%,  
-                        rgba(40, 37, 51, 0) 100%); */
+                        rgba(40, 37, 51, 0) 100%);
     top: 0;
     left: 0;
     z-index: 1; 
-    /* transform: scale(1); */
+    transform: scale(1);
 }
 
 .header__title::after {
