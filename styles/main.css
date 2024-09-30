@@ -138,10 +138,12 @@ body::-webkit-scrollbar-corner {
     width: 160px;
     height: 49px;
     padding: 10px 0;
+    border: none;
     border-radius: 40px;
     box-shadow: inset 4px 4px 6px 0 rgba(255, 255, 255, 0.5), 4px 4px 20px 0 rgba(223, 80, 23, 0.8);
     background: rgba(158, 11, 55, 0.7);
     font-size: 17px;
+    color: var(--text-color);
 }
 
 .header__title {
@@ -151,7 +153,7 @@ body::-webkit-scrollbar-corner {
     height: 650px;
     margin: -80px auto 0;
     z-index: -10;
-    transform-origin: top left;
+    /* transform-origin: top left; */
 }
 
 .header__title::before {
@@ -160,10 +162,10 @@ body::-webkit-scrollbar-corner {
     /* width: 1310px; */
     width: 68%;
     height: 648px;  
-    /* background-image: url(../assets/img/tv-wrap_gradient.png);
+    background-image: url(../assets/img/tv-wrap_gradient.png);
     background-size: cover;
-    background-position: center; */
-    background: 
+    background-position: center;
+    /* background: 
         linear-gradient(150deg, 
                         #df5017 0%, 
                         rgba(223, 80, 23, 0.4) 20%, 
@@ -179,11 +181,11 @@ body::-webkit-scrollbar-corner {
                         rgba(40, 37, 51, 0.5) 50%, 
                         rgba(40, 37, 51, 0.3) 60%,  
                         rgba(40, 37, 51, 0) 70%,  
-                        rgba(40, 37, 51, 0) 100%);
+                        rgba(40, 37, 51, 0) 100%); */
     top: 0;
     left: 0;
     z-index: 1; 
-    transform: scale(1);
+    /* transform: scale(1); */
 }
 
 .header__title::after {
@@ -533,4 +535,8 @@ h1 {
     bottom: -5px;
     left: 150px;
     z-index: 2;
+}
+
+p:last-child {
+    margin-bottom: 80px;
 }
