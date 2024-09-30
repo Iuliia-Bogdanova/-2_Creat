@@ -1,0 +1,316 @@
+@media (width < 2020px) {
+    .gallery__row {
+        width: max-content; 
+    }
+}
+
+@media (width < 1900px) {
+    .header__title::before {
+        background: 
+            linear-gradient(150deg, 
+                            #df5017 0%, 
+                            rgba(223, 80, 23, 0.4) 20%, 
+                            rgba(223, 80, 23, 0.3) 36%, 
+                            rgba(223, 80, 23, 0.15) 50%, 
+                            rgba(223, 80, 23, 0.1) 60%,  
+                            rgba(223, 80, 23, 0) 70%, 
+                            rgba(223, 80, 23, 0) 100%),
+            linear-gradient(110deg, 
+                            #282533 0%, 
+                            #282533 0.01%, 
+                            rgba(40, 37, 51, 0.74) 20%, 
+                            rgba(40, 37, 51, 0.5) 50%, 
+                            rgba(40, 37, 51, 0.3) 60%,  
+                            rgba(40, 37, 51, 0) 70%,  
+                            rgba(40, 37, 51, 0) 100%);
+    }
+}
+
+@media (width < 1480px) {
+    .container  {
+        padding: 0 30px;
+    }
+}
+
+@media (width < 1326px) {
+    .content-wrapper {
+        flex-direction: column-reverse;
+        width: 100%;
+        align-items: center;
+    }
+
+    .content-wrapper > :first-child {
+        order: 1;
+    }
+    
+    .content-wrapper > :ntn-child(2) {
+        order: 2;
+    }
+
+    .basic {
+        width: 100%;
+    }
+
+    .pages {
+        width: 100%;
+    }
+
+    .pages__list {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media (width < 1160px) {
+    .error__arrows {
+        width: 203px;
+        height: 62px;
+        margin: 0 520px 26px;
+    }
+
+    .error__book-list {
+        display: flex;
+        width: 60%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .error__book {
+        width: 123px;
+        height: 175px;
+    }
+
+    .error__book--second::before {
+        width: 75px;
+        height: 75px;
+        top: -54px;
+        left: 30px;
+    }
+
+    .error__book--bad::before {
+        width: 75px;
+        height: 75px;
+        top: -54px;
+        left: 30px;
+    }
+
+    .pages {
+        margin-bottom: 50px;
+    }
+
+    .page__item {
+        width: 207px;
+        height: 207px;
+    }
+
+    .page__item::before {
+        width: 150px;
+        height: 75px;
+    }
+
+    .page__link {
+        rotate: 270deg;
+        top: 86px;
+        left: 42%;
+    }
+
+    .larger-text::after {
+        rotate: 90deg;
+        left: 160px;
+    }
+
+    .gallery { 
+        margin-bottom: 144px;
+    }
+
+    .gallery__item {   
+        flex: 0 0 302px;
+        height: 180px;
+    }
+}
+
+@media (width < 1125px) {
+    body {
+        font-size: 18px;
+    }
+
+    .header {
+        margin-bottom: 60px;
+    }
+
+    .menu__link,
+    .menu__link--second {
+        font-size: 14px;
+    }
+
+    .menu__link--first::after {
+        left: 110px;
+        top: 6px;
+    }
+
+    .menu__link--btn, 
+    .products__text {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .info__insert {
+        margin-bottom: 0;
+    }
+
+    .info__number--fourth {
+        margin-bottom: 50px;
+    }
+
+    .pages {
+        margin-bottom: 40px;
+    }
+}
+    @media (width < 1070px) {
+        .info__number {
+        width: 80px;
+        height: 100px;
+    }
+
+    .products {
+        justify-content: center;
+    }
+
+    .error__arrows {
+        margin: 0 450px 26px;
+    }
+
+    .pages {
+        margin-bottom: 30px;
+    }
+}
+
+@media (width < 976px) {
+    .menu__list {
+        gap: 54px;
+    }
+
+    .menu__link--first::after {
+        left: 102px;
+    }
+
+    .menu__auth {
+        gap: 32px;
+    }
+
+    .basic__intro {
+        width: 90%;
+        margin: 0 auto 60px;
+    }
+
+    .error__picture--first {
+        width: 182px;
+        height: 126px;
+    }
+
+    .error__picture--second {
+        width: 188px;
+        height: 138px;
+    }
+
+    .error__book-list {
+        width: 80%;
+    }
+}
+
+@media (width < 904px) {
+    .pages__list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .page__item {
+        width: auto;
+        height: auto;
+        background: none;
+    }
+
+    .page__item::before {
+        display: none;
+    }
+
+    .page__link {
+        rotate: 15deg;
+        top: -10px;
+        left: -100px;
+    }
+
+    .concl {
+        margin-bottom: 60px;
+    }
+
+    .gallery__item {   
+        flex: 0 0 200px;
+        height: 140px;
+    }
+
+    .gallery { 
+        margin-bottom: 100px;
+    }
+}
+
+@media (width < 870px) {
+    .error__arrows {
+        margin: 0 320px 26px;
+    }
+}
+
+@media (width < 730px) {
+    .header__top {
+        padding: 20px 0;
+    }
+
+    .menu__list {
+        flex-direction: column;
+        align-items: start;
+        gap: 0;
+    }
+
+    .header__title {
+        height: 324px;
+        margin: 0 auto;
+    }
+
+    .header__title::before {
+        width: 100%;
+        height: 324px;
+    }
+
+    .header__title::after {
+        display: none;
+    }
+
+    .title__text {
+        height: 324px;
+    }
+
+    .products__text {
+        margin: 20px auto 0;
+    }
+
+    .error__book-list {
+        width: 100%;
+    }
+
+    .info__number--fourth {
+        margin-bottom: 82px;
+    }
+
+    .pages__list {
+        height: 100px;
+    }
+
+    .page__link {
+        rotate: 70deg;
+    }
+}
